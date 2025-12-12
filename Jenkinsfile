@@ -3,7 +3,7 @@ pipeline {
 
     //TODO1: jmeter 설치 폴더 위치 설정
     environment {
-        JMETER_HOME_WIN = "C:\Users\dlxor\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3"
+        JMETER_HOME_WIN = "C:\\Users\\dlxor\\Downloads\\apache-jmeter-5.6.3\\apache-jmeter-5.6.3"
         JMETER_HOME_UNIX = "/.../apache-jmeter-5.6.3"
     }
 
