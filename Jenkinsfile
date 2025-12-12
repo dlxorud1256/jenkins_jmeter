@@ -89,7 +89,7 @@ pipeline {
         }
 
         //TODO3: Performance Plugin 설치 후 활성화
-        
+        /*
         stage('Publish Performance Report') {
             steps {
                 // perfReport sources: 'results.jtl'
@@ -103,7 +103,7 @@ pipeline {
     
             }
         }
-        
+        */
 
 
         stage('Archive Results') {
