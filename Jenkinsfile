@@ -3,7 +3,7 @@ pipeline {
 
     //TODO1: jmeter 설치 폴더 위치 설정
     environment {
-        JMETER_HOME_WIN = "C:/.../apache-jmeter-5.6.3"
+        JMETER_HOME_WIN = "C:\Users\dlxor\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3"
         JMETER_HOME_UNIX = "/.../apache-jmeter-5.6.3"
     }
 
@@ -13,7 +13,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     //TODO2: JMeter 실행계획(.jmx)이 있는 Git Repo 주소
-                    url: 'https://github.com/xxx/xxx.git'
+                    url: 'https://github.com/dlxorud1256/jenkins_jmeter.git'
             }
         }
 
@@ -89,7 +89,7 @@ pipeline {
         }
 
         //TODO3: Performance Plugin 설치 후 활성화
-        /*
+        
         stage('Publish Performance Report') {
             steps {
                 // perfReport sources: 'results.jtl'
@@ -103,7 +103,7 @@ pipeline {
     
             }
         }
-        */
+        
 
 
         stage('Archive Results') {
